@@ -1,0 +1,53 @@
+
+
+.hero{
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.hero-caption{
+    color: #000000;
+}
+
+.hero-caption, img{
+    text-align: center;
+}
+
+.titulos{
+    color: #CC9CFF;
+    font-family: Arial, sans-serif; 
+    text-align: center;
+}
+
+.titulo1{
+    font-size: 64px;
+}
+
+.textinhos {
+    color: #636363;
+    max-width: 850px;
+    margin: 20px auto 0;
+    line-height: 1.6;
+}
+
+img{
+    height: 256px;
+}
+
+.logoInterroga {
+    font-family: Arial, sans-serif;
+    color: #CC9CFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.interrogacao {
+    font-size: 180px;
+    margin: 0;
+    line-height: 1;
+}

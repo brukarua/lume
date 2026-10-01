@@ -1,0 +1,44 @@
+.places-grid{
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    gap: 16px;
+}
+
+.place-card{
+    background-color: #fff;
+    color: #000;
+    width: 300px;
+}
+
+.place-card img{
+    width: 100%;
+}
+
+.place-card img:hover{
+    opacity: 0.6;
+}
+
+.place-info{
+    padding: 15px;
+}
+
+.place-date{
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+.btn{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
