@@ -37,22 +37,18 @@
 }
 
 .logoInterroga img {
-  height: 200px; /* Aumentado de 120px para 180px */
+  height: 200px;
   width: auto;
   display: block;
 }
 
-.interrogacao {
-  font-size: 140px; /* Aumentado de 100px para 150px */
-  margin: 0;
-  line-height: 1;
-  color: #CC9CFF;
-  font-weight: bold;
+.interrogacao img{
+  height: 20px;
 }
 
 .textinhos {
   color: #636363;
-  font-size: 18px; /* Ligeiramente aumentado para acompanhar o título */
+  font-size: 18px;
   max-width: 850px;
   margin: 25px auto 0;
   line-height: 1.6;

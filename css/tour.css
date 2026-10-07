@@ -27,7 +27,6 @@
 
 .places-grid {
     display: grid;
-    /* Cria colunas automáticas de no mínimo 280px e alinha ao centro */
     grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
     gap: 30px;
     justify-content: center;
@@ -39,7 +38,7 @@
     background-color: #ffffff;
     color: #333333;
     border-radius: 12px;
-    overflow: hidden; /* Corta a imagem nas bordas arredondadas */
+    overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-direction: column;

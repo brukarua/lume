@@ -76,6 +76,7 @@
     display: block;
 }
 
+/* mobile */
 
 @media (max-width: 768px) {
     .navnav {

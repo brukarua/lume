@@ -69,9 +69,7 @@
 }
 
 
-/* ==========================================================
-   2. ESTILO EXCLUSIVO PARA MOBILE (Telas menores que 768px)
-   ========================================================== */
+/* mobile */
 
 @media screen and (max-width: 768px) {
     .seccao-topicos {
@@ -84,7 +82,7 @@
     }
 
     .topicos-container {
-        flex-direction: column; /* Empilha os cartões apenas no celular */
+        flex-direction: column;
         gap: 16px;
         padding: 10px 0;
     }
@@ -94,7 +92,7 @@
         background-color: #faf8fc;
         border: 1px solid #f0e6fa;
         border-radius: 12px;
-        text-align: center; /* Centraliza o texto no celular */
+        text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
