@@ -1,9 +1,104 @@
-.section-tour{
-    background-color: #000;
+
+.section-tour {
+    background-color: #694D88;
     color: #fff;
-    padding: 30px;
+    padding: 60px 20px;
 }
- 
-.text-white{
+
+.section-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    opacity: 0.9;
+    font-style: italic;
+}
+
+.text-white {
     color: #ffffff;
+}
+
+.places-grid {
+    display: grid;
+    /* Cria colunas automáticas de no mínimo 280px e alinha ao centro */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+    gap: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.place-card {
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 12px;
+    overflow: hidden; /* Corta a imagem nas bordas arredondadas */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.place-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    display: block;
+}
+
+
+.place-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}
+
+.place-info h4 {
+    font-size: 20px;
+    margin: 0 0 4px 0;
+    color: #222;
+}
+
+.place-date {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.place-info p:not(.place-date) {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 20px;
+    flex-grow: 1; 
+}
+
+.btn {
+    background-color: #CC9CFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    align-self: flex-start; 
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #b57bee;
 }

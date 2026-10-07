@@ -1,53 +1,94 @@
-
-
-.hero{
-    background-size: cover;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
- 
-.hero-caption{
-    color: #000000;
+.hero {
+  background-size: cover;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
 }
 
-.hero-caption, img{
-    text-align: center;
+.hero-caption {
+  color: #000000;
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
 }
 
-.titulos{
-    color: #CC9CFF;
-    font-family: Arial, sans-serif; 
-    text-align: center;
+.titulos {
+  color: #CC9CFF;
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 
-.titulo1{
-    font-size: 64px;
-}
-
-.textinhos {
-    color: #636363;
-    max-width: 850px;
-    margin: 20px auto 0;
-    line-height: 1.6;
-}
-
-img{
-    height: 256px;
+.titulo1 {
+  font-size: 96px;
+  margin: 0 0 10px 0;
+  line-height: 1.1;
+  font-weight: bold;
 }
 
 .logoInterroga {
-    font-family: Arial, sans-serif;
-    color: #CC9CFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  font-family: Arial, sans-serif;
+  color: #CC9CFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.logoInterroga img {
+  height: 200px; /* Aumentado de 120px para 180px */
+  width: auto;
+  display: block;
 }
 
 .interrogacao {
-    font-size: 180px;
-    margin: 0;
-    line-height: 1;
+  font-size: 140px; /* Aumentado de 100px para 150px */
+  margin: 0;
+  line-height: 1;
+  color: #CC9CFF;
+  font-weight: bold;
+}
+
+.textinhos {
+  color: #636363;
+  font-size: 18px; /* Ligeiramente aumentado para acompanhar o título */
+  max-width: 850px;
+  margin: 25px auto 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+/* mobile seeeection */
+
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 40px 16px;
+  }
+
+  .titulo1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  .logoInterroga {
+    gap: 8px;
+    margin: 8px auto;
+  }
+
+  .logoInterroga img {
+    height: 80px;
+  }
+
+  .interrogacao {
+    font-size: 50px;
+  }
+
+  .textinhos {
+    font-size: 14px;
+    margin-top: 16px;
+    padding: 0 10px;
+  }
 }

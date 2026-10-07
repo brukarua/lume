@@ -1,9 +1,12 @@
+/* ==========================================================
+   1. ESTILO PADRÃO / DESKTOP (Computadores e Notebooks)
+   ========================================================== */
 
 .seccao-topicos {
     margin-top: 80px; 
+    height: auto; /* Alterado de 90vh para auto para não quebrar o layout */
     text-align: center;
 }
-
 
 .titulo-topicos {
     color: #CC9CFF;
@@ -23,43 +26,81 @@
 }
 
 .topico {
-  flex: 1;
-  padding: 32px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+    flex: 1;
+    padding: 32px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: left;
 }
 
 .topico:hover {
-  background-color: #CC9CFF;
+    background-color: #CC9CFF;
 }
 
 .topico-imagem {
-  width: 36px;       
-  height: 36px;
-  margin-bottom: 12px;
-  display: block;
+    width: 36px;       
+    height: 36px;
+    margin-bottom: 12px;
+    display: block;
 }
 
 .topico h3 {
-  font-size: 18px;
-  color: #000;
-  margin-bottom: 12px;
-  transition: color 0.3s ease;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
 }
 
 .topico p {
-  font-size: 14px;
-  color: #666;
-  line-height: 1.5;
-  margin: 0;
-  transition: color 0.3s ease; 
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+    transition: color 0.3s ease; 
 }
 
 .topico:hover h3,
 .topico:hover p {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .topico:hover .topico-imagem {
-  filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+
+/* ==========================================================
+   2. ESTILO EXCLUSIVO PARA MOBILE (Telas menores que 768px)
+   ========================================================== */
+
+@media screen and (max-width: 768px) {
+    .seccao-topicos {
+        margin-top: 40px;
+        padding: 0 16px;
+    }
+
+    .titulo-topicos {
+        font-size: 26px;
+    }
+
+    .topicos-container {
+        flex-direction: column; /* Empilha os cartões apenas no celular */
+        gap: 16px;
+        padding: 10px 0;
+    }
+
+    .topico {
+        padding: 24px 20px;
+        background-color: #faf8fc;
+        border: 1px solid #f0e6fa;
+        border-radius: 12px;
+        text-align: center; /* Centraliza o texto no celular */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topico-imagem {
+        margin: 0 auto 12px auto;
+    }
 }

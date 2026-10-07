@@ -112,7 +112,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #694D88; /* Fica roxo no hover */
+  background-color: #694D88; 
   color: #ffffff;
 }
 

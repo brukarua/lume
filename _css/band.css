@@ -21,19 +21,27 @@
 }
  
 .about-text{
-    text-align: justify;
     margin-bottom: 30px;
 }
- 
-.members-grid {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    padding: 32px 0;
+
+.member-card {
+  background: url("../imagens/image.jpg") no-repeat center/cover;
+  height: 600px;
 }
- 
-.member-card img{
-    width: 160px;
-    border-radius: 4px;
-    margin-top: 15px;
+
+.member-card img {
+  width: 100%;
+  max-width: 1000px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .member-card,
+  .member-card img {
+    height: auto;
+    max-height: 350px;
+  }
 }
