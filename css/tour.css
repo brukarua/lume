@@ -12,12 +12,13 @@
 .section-title {
     font-size: 32px;
     margin-bottom: 8px;
+    font-family: Arial, sans-serif;
 }
 
 .section-subtitle {
+    font-family: Arial, sans-serif;
     font-size: 16px;
     opacity: 0.9;
-    font-style: italic;
 }
 
 .text-white {
@@ -33,7 +34,12 @@
     margin: 0 auto;
 }
 
+h4{
+    color: #333333;
+}
+
 .place-card {
+    font-family: Arial, sans-serif;
     color: #333333;
     background-color: #ffffff;
     border-radius: 12px;
@@ -49,7 +55,6 @@
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* Container de imagem com troca ao passar o mouse */
 .img-container {
     width: 100%;
     height: 200px;
@@ -72,19 +77,16 @@
     transition: opacity 0.3s ease;
 }
 
-/* Estado padrão da imagem */
 .img-container .img-default {
     opacity: 1;
     z-index: 1;
 }
 
-/* Estado ao passar o mouse (escondido por padrão) */
 .img-container .img-hover {
     opacity: 0;
     z-index: 2;
 }
 
-/* Troca de imagens no hover do card */
 .place-card:hover .img-hover {
     opacity: 1;
 }
@@ -129,13 +131,10 @@
     font-weight: bold;
     cursor: pointer;
     font-size: 14px;
-    
-    /* Garante que o botão só ocupa o espaço do texto */
     display: inline-block;
     width: fit-content;
     align-self: flex-start; 
-    
-    text-decoration: none; /* Remove o sublinhado se for um link <a> */
+    text-decoration: none;
     transition: background-color 0.2s ease;
 }
 
