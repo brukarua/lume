@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
-
 * {
 margin: 0;
     padding: 0;
@@ -14,6 +13,60 @@ html{
  
 body{
 
-    line-height: 1.5;/*Altura entre linhas*/
+    line-height: 1.5;
     font-family: "Cantarell", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+section, 
+.section-tour, 
+.hero, 
+.container-solucao {
+  padding: 100px 20px !important;
+  margin: 0 auto !important;
+}
+
+/* 3. Padronização dos cabeçalhos das seções */
+.section-container,
+.container-titulos,
+.hero-caption {
+  margin-bottom: 50px !important;
+}
+
+.section-title,
+.titulo-solucao,
+.titulos {
+  margin-top: 0;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.section-subtitle,
+.subtitulo-solucao {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+  section, 
+  .section-tour, 
+  .hero, 
+  .container-solucao {
+    padding: 60px 16px !important;
+  }
+
+  .section-container,
+  .container-titulos,
+  .hero-caption {
+    margin-bottom: 30px !important;
+  }
 }

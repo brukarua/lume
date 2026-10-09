@@ -1,10 +1,5 @@
-/* ==========================================================
-   1. ESTILO PADRÃO / DESKTOP (Computadores e Notebooks)
-   ========================================================== */
-
 .seccao-topicos {
-    margin-top: 80px; 
-    height: auto; /* Alterado de 90vh para auto para não quebrar o layout */
+    height: auto;
     text-align: center;
 }
 

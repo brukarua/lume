@@ -36,14 +36,16 @@
   gap: 16px;
 }
 
-.logoInterroga img {
+.logoInterroga img:not(.interrogacao) {
   height: 200px;
   width: auto;
   display: block;
 }
 
-.interrogacao img{
-  height: 20px;
+.logoInterroga img.interrogacao {
+  height: 140px; 
+  width: auto;
+  display: block;
 }
 
 .textinhos {
@@ -56,7 +58,7 @@
 }
 
 
-/* mobile seeeection */
+/* mobile section */
 
 @media screen and (max-width: 768px) {
   .hero {
@@ -74,12 +76,12 @@
     margin: 8px auto;
   }
 
-  .logoInterroga img {
+  .logoInterroga img:not(.interrogacao) {
     height: 80px;
   }
 
-  .interrogacao {
-    font-size: 50px;
+  .logoInterroga img.interrogacao {
+    height: 50px;
   }
 
   .textinhos {
