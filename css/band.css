@@ -1,47 +1,81 @@
-.section-container{
+.section-container {
     max-width: 800px;
     margin: auto;
     padding: 64px 16px;
     text-align: center;
-    justify-content: center;
 }
- 
-.section-title{
+
+.section-title {
     text-align: center;
     letter-spacing: 4px;
     font-size: 30px;
-    font-weight: 400px;
+    font-weight: 400;
+    font-weight: bold;
 }
- 
-.section-subtitle{
+
+.section-subtitle {
     text-align: center;
     font-style: italic;
     opacity: 0.6;
     margin: 15px 0;
 }
- 
-.about-text{
+
+.about-text {
     margin-bottom: 30px;
 }
 
 .member-card {
-  background: url("../imagens/lumeroxo.png") no-repeat center/cover;
-  height: 600px;
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: none;
 }
 
 .member-card img {
-  width: 100%;
-  max-width: 1000px;
-  height: 600px;
-  object-fit: cover;
-  border-radius: 4px;
-  margin-top: 15px;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
+.member-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../imagens/equipe01.png") no-repeat center / cover;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.member-card:hover::after {
+    opacity: 1;
+}
+
+.member-names {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.member-names span {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* mobile */
 @media (max-width: 768px) {
-  .member-card,
-  .member-card img {
-    height: auto;
-    max-height: 350px;
-  }
+    .section-container {
+        padding: 32px 16px;
+    }
+
+    .member-names span {
+        font-size: 14px;
+    }
 }
