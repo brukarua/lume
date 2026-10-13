@@ -53,6 +53,22 @@ section,
   margin-bottom: 0;
 }
 
+#sobre {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+#servicos {
+  scroll-behavior: smooth;
+  scroll-margin-top: 250px;
+}
+
+#projetos {
+  scroll-behavior: smooth;
+  scroll-margin-top: 50px;
+}
+
+
 /* mobile */
 
 @media screen and (max-width: 768px) {

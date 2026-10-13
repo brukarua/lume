@@ -3,7 +3,6 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Plus Jakarta Sans', sans-serif;
   background-color: #ffffff;
 }
 
@@ -29,9 +28,9 @@ body {
 .cta-section .title {
   font-size: 3rem;
   font-family: Arial, sans-serif;
-  letter-spacing: -1.5px;
+  letter-spacing: normal;
   margin: 0 0 16px 0;
-  color: #000000;
+  color: #313131;
 }
 
 .cta-section .subtitle {
@@ -107,11 +106,13 @@ body {
   display: flex;
   gap: 24px;
   align-items: center;
+  font-family: Arial, sans-serif;
+  color: #444444;
 }
 
 .footer-nav a {
+  color: #444444;
   text-decoration: none;
-  color: #000000;
   font-weight: 700;
   font-size: 1rem;
   transition: color 0.2s ease;
@@ -142,18 +143,20 @@ body {
 
 .footer-bar {
   display: flex;
-  justify-content: center; /* Centraliza todo o bloco no meio da tela */
+  justify-content: center;
   align-items: center;
-  gap: 16px;              /* Espaço entre copyright, barra e equipe */
+  gap: 16px;
   padding: 24px;
   width: 100%;
-  font-family: system-ui, -apple-system, sans-serif;
   font-size: 0.8rem;
   color: #777777;
 }
 
 .copyright {
   margin: 0;
+  color: #777777;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .separator {

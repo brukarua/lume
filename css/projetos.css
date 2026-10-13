@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 .section-tour {
     background-color: #694D88;
     color: #fff;
     padding: 60px 20px;
+    letter-spacing: 0;
 }
 
 .section-container {
@@ -10,15 +13,17 @@
 }
 
 .section-title {
-    font-size: 32px;
-    margin-bottom: 8px;
+    font-size: 40px;
     font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: #313131;
+    letter-spacing: 0;
 }
 
 .section-subtitle {
-    font-family: Arial, sans-serif;
     font-size: 16px;
-    opacity: 0.9;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
 }
 
 .text-white {
