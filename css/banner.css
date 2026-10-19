@@ -57,9 +57,9 @@
   text-align: center;
 }
 
-.slogan{
+.slogan {
   font-size: 20px;
-  color: #694D88
+  color: #694D88;
 }
 
 
@@ -93,5 +93,9 @@
     font-size: 14px;
     margin-top: 16px;
     padding: 0 10px;
+  }
+
+  .slogan {
+    font-size: 14px; 
   }
 }
