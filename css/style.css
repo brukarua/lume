@@ -12,6 +12,11 @@ img {
   -webkit-user-drag: none;
 }
 
+button, a {
+  -webkit-user-drag: none;
+  -webkit-user-drag: none;
+}
+
 * {
 margin: 0;
     padding: 0;
