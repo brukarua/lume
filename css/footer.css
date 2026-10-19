@@ -49,7 +49,7 @@ body {
   color: #ffffff;
   font-size: 1rem;
   font-weight: 700;
-  padding: 14px 48px;
+  padding: 12px 36px;
   border-radius: 50px;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -122,6 +122,9 @@ body {
   color: #c89bfa;
 }
 
+
+/* mobile */
+
 @media (max-width: 600px) {
   .cta-section .title {
     font-size: 2.2rem;
@@ -185,8 +188,6 @@ body {
   color: #dddddd;
   pointer-events: none;
 }
-
-/* mobile */
 
 @media (max-width: 600px) {
   .footer-bar {

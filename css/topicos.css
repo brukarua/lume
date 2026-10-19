@@ -26,14 +26,17 @@
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     text-align: left;
+    cursor: pointer; /* Mostra que é clicável */
 }
 
-.topico:hover {
+/* Hover para computadores */
+.topico:hover,
+.topico.ativo {
     background-color: #CC9CFF;
 }
 
 .topico-imagem {
-    width: 36px;       
+    width: 36px;        
     height: 36px;
     margin-bottom: 12px;
     display: block;
@@ -54,12 +57,16 @@
     transition: color 0.3s ease; 
 }
 
+/* Textos e ícones mudam no hover OU quando tiver a classe .ativo */
 .topico:hover h3,
-.topico:hover p {
+.topico:hover p,
+.topico.ativo h3,
+.topico.ativo p {
     color: #ffffff;
 }
 
-.topico:hover .topico-imagem {
+.topico:hover .topico-imagem,
+.topico.ativo .topico-imagem {
     filter: brightness(0) invert(1);
 }
 
