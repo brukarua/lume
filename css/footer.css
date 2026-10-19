@@ -86,7 +86,7 @@ body {
 }
 
 .sponsors-logos img {
-  max-height: 100px;
+  max-height: 80px;
   width: auto;
   object-fit: contain;
   cursor: pointer;
