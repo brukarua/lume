@@ -123,6 +123,64 @@ body {
 }
 
 
+
+
+
+
+
+/* ==========================================
+   MODO ALTO CONTRASTE - BOTÃO DE CHAT (CTA)
+   ========================================== */
+
+body.alto-contraste .footer-container {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+body.alto-contraste .cta-section .title,
+body.alto-contraste .cta-section .subtitle,
+body.alto-contraste .sponsors-title {
+  color: #ffffff !important;
+}
+
+/* Estado Normal do Botão no Alto Contraste */
+body.alto-contraste .btn-chat {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 2px solid #ffffff !important;
+  padding: 12px 36px !important;
+  border-radius: 50px !important;
+  text-decoration: none !important;
+  font-weight: 700 !important;
+  display: inline-flex !important;
+}
+
+/* Força a cor preta em todos os textos/elementos dentro do botão no estado normal */
+body.alto-contraste .btn-chat,
+body.alto-contraste .btn-chat * {
+  color: #000000 !important;
+}
+
+/* Estado Hover do Botão no Alto Contraste */
+body.alto-contraste .btn-chat:hover {
+  background-color: #000000 !important;
+  border-color: #ffffff !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Força a cor branca em todos os textos/elementos dentro do botão no hover */
+body.alto-contraste .btn-chat:hover,
+body.alto-contraste .btn-chat:hover * {
+  color: #ffffff !important;
+}
+
+
+
+
+
+
+
+
 /* mobile */
 
 @media (max-width: 600px) {

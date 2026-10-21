@@ -62,6 +62,24 @@
   color: #694D88;
 }
 
+/* alto-contraste*/
+body.alto-contraste .hero {
+  background-color: #000000 !important;
+}
+
+body.alto-contraste .slogan {
+  font-weight: bold !important;
+  color: #ffffff !important;
+}
+
+body.alto-contraste .textinhos {
+  color: #ffffff !important;
+}
+
+body.alto-contraste .titulo1,
+body.alto-contraste .titulos {
+  color: #ffffff !important;
+}
 
 /* mobile */
 

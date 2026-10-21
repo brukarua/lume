@@ -45,6 +45,10 @@ html {
   box-sizing: border-box;
 }
 
+body.alto-contraste a {
+  text-decoration: none !important;
+}
+
 section, 
 .section-tour, 
 .hero, 
@@ -88,6 +92,23 @@ section,
   scroll-margin-top: 50px;
 }
 
+.botao-contraste { /* Substitua por . sua classe ou ID exato do botão de contraste */
+  position: fixed !important;
+  right: 20px !important; /* Mesma distância da borda que o botão de Libras usa */
+  bottom: 90px !important; /* Ajusta esta altura para ficar logo acima ou abaixo do Libras */
+  z-index: 9999 !important;
+  
+  /* Se quiseres que ele fique com um formato quadrado/compacto semelhante ao ícone de Libras */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  transition: transform 0.2s ease !important;
+}
+
+.botao-contraste:hover {
+  transform: scale(1.05) !important;
+}
 
 /* mobile */
 

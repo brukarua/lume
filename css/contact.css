@@ -8,6 +8,21 @@ body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
   color: #333333;
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+img {
+  -webkit-user-drag: none;
+  -webkit-user-drag: none;
+}
+
+button, a {
+  -webkit-user-drag: none;
+  -webkit-user-drag: none;
 }
 
 .container {

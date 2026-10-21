@@ -74,6 +74,43 @@
     display: block;
 }
 
+/* alto-contraste*/
+/* Fundo da barra de navegação preto no alto contraste */
+body.alto-contraste .navbar {
+  background-color: #000000 !important;
+  border-bottom: 1px solid #ffffff !important;
+}
+
+/* Estado normal dos itens do menu (Início e Contate-nos) */
+body.alto-contraste .nav-item,
+body.alto-contraste .nav-item1 {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 2px solid #ffffff !important;
+  text-decoration: none !important;
+}
+
+/* Força a cor preta em qualquer texto/seta dentro dos botões no estado normal */
+body.alto-contraste .nav-item *,
+body.alto-contraste .nav-item1 * {
+  color: #000000 !important;
+}
+
+/* Efeito Hover dos itens no alto contraste (Inverte para fundo preto e texto branco) */
+body.alto-contraste .nav-item:hover,
+body.alto-contraste .nav-item1:hover {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+/* Força a cor branca em textos e setas no hover */
+body.alto-contraste .nav-item:hover *,
+body.alto-contraste .nav-item1:hover * {
+  color: #ffffff !important;
+}
+
+
 /* mobile */
 @media (max-width: 768px) {
     .navbar {

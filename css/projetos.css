@@ -146,3 +146,56 @@ h4{
 .btn:hover {
     background-color: #b57bee;
 }
+
+/* ==========================================
+   MODO ALTO CONTRASTE - SEÇÃO DE PROJETOS
+   ========================================== */
+
+/* 1. Fundo da seção geral */
+body.alto-contraste .section-tour {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* 2. Textos e títulos principais */
+body.alto-contraste .section-title,
+body.alto-contraste .section-subtitle,
+body.alto-contraste .text-white {
+  color: #ffffff !important;
+}
+
+/* 3. Estilo dos Cards dos Projetos */
+body.alto-contraste .place-card {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 2px solid #ffffff !important;
+  box-shadow: none !important; /* Remove sombras para visual mais limpo */
+}
+
+/* Textos dentro do Card */
+body.alto-contraste .place-info h4 {
+  color: #000000 !important;
+}
+
+body.alto-contraste .place-date {
+  color: #333333 !important; /* Cinza bem escuro para manter leitura clara */
+  font-weight: bold !important;
+}
+
+body.alto-contraste .place-info p:not(.place-date) {
+  color: #000000 !important;
+}
+
+/* 4. Botão "Ir" dentro dos Cards */
+body.alto-contraste .btn {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 2px solid #000000 !important;
+}
+
+/* Efeito Hover do Botão no Alto Contraste */
+body.alto-contraste .btn:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+}

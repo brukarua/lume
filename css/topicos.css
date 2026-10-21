@@ -26,10 +26,9 @@
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     text-align: left;
-    cursor: pointer; /* Mostra que é clicável */
+    cursor: pointer;
 }
 
-/* Hover para computadores */
 .topico:hover,
 .topico.ativo {
     background-color: #CC9CFF;
@@ -57,7 +56,6 @@
     transition: color 0.3s ease; 
 }
 
-/* Textos e ícones mudam no hover OU quando tiver a classe .ativo */
 .topico:hover h3,
 .topico:hover p,
 .topico.ativo h3,
@@ -71,7 +69,28 @@
 }
 
 
-/* mobile */
+/* alto contraste */
+
+body.alto-contraste .topico {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 2px solid #ffffff !important;
+  cursor: default !important;
+}
+
+body.alto-contraste .topico h3,
+body.alto-contraste .topico p {
+  color: #000000 !important;
+}
+
+body.alto-contraste .topico .topico-imagem {
+  filter: none !important;
+  background-color: transparent !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+}
+
+
 
 @media screen and (max-width: 768px) {
     .seccao-topicos {
