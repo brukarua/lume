@@ -11,29 +11,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
 document.addEventListener("DOMContentLoaded", function () {
   const btnContraste = document.getElementById("btn-contraste");
-  
-  btnContraste.addEventListener("click", function () {
-    document.body.classList.toggle("alto-contraste");
 
-    if (document.body.classList.contains("alto-contraste")) {
-      localStorage.setItem("contraste", "ativo");
-      btnContraste.textContent = "Contraste Normal";
-    } else {
-      localStorage.setItem("contraste", "normal");
-      btnContraste.textContent = "Alto Contraste";
+  if (btnContraste) {
+    btnContraste.addEventListener("click", function () {
+      document.body.classList.toggle("alto-contraste");
+
+      if (document.body.classList.contains("alto-contraste")) {
+        localStorage.setItem("contraste", "ativo");
+      } else {
+        localStorage.setItem("contraste", "normal");
+      }
+    });
+
+    // Mantém o modo de alto contraste ativo ao recarregar a página
+    if (localStorage.getItem("contraste") === "ativo") {
+      document.body.classList.add("alto-contraste");
     }
-  });
-
-  if (localStorage.getItem("contraste") === "ativo") {
-    document.body.classList.add("alto-contraste");
-    btnContraste.textContent = "Contraste Normal";
   }
 });
 
-
+// Troca de imagens do primeiro card de projetos
 document.querySelectorAll('.place-card').forEach((card, index) => {
   if (index === 0) {
     const imgDefault = card.querySelector('.img-default');
@@ -67,6 +66,7 @@ document.querySelectorAll('.place-card').forEach((card, index) => {
         imgHover.src = srcHoverOriginal;
       }
     });
+    
     observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
   }
 });

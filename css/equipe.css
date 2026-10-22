@@ -73,6 +73,42 @@
     font-weight: 500;
 }
 
+
+/* alto contraste*/
+
+/* Se houver uma tag <section> a envolver, pintamos ela de preto de ponta a ponta */
+body.alto-contraste section#sobre {
+  background-color: #000000 !important;
+  width: 100% !important;
+}
+
+/* Garante que o interior da caixa também fique com fundo preto e sem margens brancas estranhas */
+body.alto-contraste #sobre.section-container {
+  background-color: #000000 !important;
+  max-width: 100% !important; /* Ocupa a largura toda */
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+/* Limitamos a largura apenas dos textos e da foto para continuarem centralizados e bonitos */
+body.alto-contraste #sobre .about-text,
+body.alto-contraste #sobre .section-title,
+body.alto-contraste #sobre .section-subtitle,
+body.alto-contraste #sobre .members-grid {
+  max-width: 800px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Textos e títulos em branco */
+body.alto-contraste #sobre .section-title,
+body.alto-contraste #sobre .section-subtitle,
+body.alto-contraste #sobre .about-text,
+body.alto-contraste #sobre .member-names span {
+  color: #ffffff !important;
+}
+
+
 /* mobile */
 @media (max-width: 768px) {
     .section-container {

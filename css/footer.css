@@ -247,6 +247,31 @@ body.alto-contraste .btn-chat:hover * {
   pointer-events: none;
 }
 
+/* 1. Força todos os textos do rodapé e links de navegação a ficarem brancos */
+body.alto-contraste .footer-nav a,
+body.alto-contraste .copyright,
+body.alto-contraste .credits a,
+body.alto-contraste .separator,
+body.alto-contraste .sponsors-title {
+  color: #ffffff !important;
+}
+
+/* 2. Remove qualquer linha, borda ou contorno branco que crie divisões indesejadas */
+body.alto-contraste,
+body.alto-contraste footer,
+body.alto-contraste .footer-container,
+body.alto-contraste .footer-bar {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* 3. Garante que o fundo da janela/página embaixo fique totalmente preto */
+html.alto-contraste,
+body.alto-contraste {
+  background-color: #000000 !important;
+}
+
+
 @media (max-width: 600px) {
   .footer-bar {
     flex-direction: column;

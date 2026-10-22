@@ -8,20 +8,17 @@ body {
   font-family: Arial, sans-serif;
   background-color: #ffffff;
   color: #333333;
-    -webkit-user-select: none;
+  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-
 img {
-  -webkit-user-drag: none;
   -webkit-user-drag: none;
 }
 
 button, a {
-  -webkit-user-drag: none;
   -webkit-user-drag: none;
 }
 
@@ -57,14 +54,15 @@ button, a {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.infoContato:hover{
-    background-color: #694D88;
-    transform: scale(1.05)
+.infoContato:hover {
+  background-color: #694D88;
+  transform: scale(1.05);
 }
 
-.infoContato:hover p{
-    color: #ffffff;
+.infoContato:hover p {
+  color: #ffffff;
 }
+
 .infoContato p {
   font-size: 14px;
   color: #555555;
@@ -104,7 +102,7 @@ button, a {
 
 .formulario input:focus {
   border-color: #694D88;
-  box-shadow: 0 0 0 2px #694D88;;
+  box-shadow: 0 0 0 2px #694D88;
 }
 
 .btn {
@@ -131,20 +129,6 @@ button, a {
   color: #ffffff;
 }
 
-@media (max-width: 768px) {
-  .contact-grid {
-    flex-direction: column;
-  }
-  
-  .form-row {
-    flex-direction: column;
-  }
-
-  .btn-right {
-    width: 100%;
-  }
-}
-
 .link-email {
   color: #CC9CFF;
   font-weight: bold;
@@ -157,3 +141,152 @@ button, a {
   text-decoration: underline;
 }
 
+
+/* ==========================================
+   MODO ALTO CONTRASTE - PÁGINA DE CONTATO
+   ========================================== */
+
+body.alto-contraste {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+body.alto-contraste .titulo,
+body.alto-contraste .subtitulo {
+  color: #ffffff !important;
+}
+
+body.alto-contraste .infoContato p {
+  color: #ffffff !important;
+}
+
+body.alto-contraste .infoContato:hover {
+  background-color: #ffffff !important;
+}
+
+body.alto-contraste .infoContato:hover p {
+  color: #000000 !important;
+}
+
+body.alto-contraste .link-email {
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+
+body.alto-contraste .link-email:hover {
+  color: #CC9CFF !important;
+}
+
+/* Campos de input no alto contraste */
+body.alto-contraste .formulario input {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+}
+
+body.alto-contraste .formulario input::placeholder {
+  color: #cccccc !important;
+}
+
+/* Botão Enviar no alto contraste */
+body.alto-contraste .btn {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: 2px solid #ffffff !important;
+}
+
+body.alto-contraste .btn:hover {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+
+/* ==========================================
+   RESPONSIVO (MOBILE)
+   ========================================== */
+
+@media (max-width: 768px) {
+  .contact-grid,
+  .cartao-contato {
+    flex-direction: column;
+  }
+  
+  .form-row {
+    flex-direction: column;
+  }
+
+  .btn-right {
+    width: 100%;
+  }
+}
+
+
+.btn-icone-voltar {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 37px !important;
+  height: 37px !important;
+  min-width: 37px !important;
+  max-width: 37px !important;
+  aspect-ratio: 1 / 1 !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  background-color: #CC9CFF !important;
+  border: none !important;
+  cursor: pointer !important;
+  margin-left: 10px !important;
+  box-sizing: border-box !important;
+  flex-shrink: 0 !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  text-decoration: none !important;
+}
+
+.btn-icone-voltar:hover {
+  background-color: #694D88 !important;
+  transform: translateY(-1px);
+}
+
+.icone-voltar {
+  width: 17px !important;
+  height: 17px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+/* Modo Alto Contraste para o botão de voltar circular */
+body.alto-contraste .btn-icone-voltar {
+  background-color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+  border-radius: 50% !important;
+}
+
+body.alto-contraste .icone-voltar {
+  filter: invert(1) !important;
+}
+
+body.alto-contraste .btn-icone-voltar:hover {
+  background-color: #000000 !important;
+  border-color: #ffffff !important;
+}
+
+body.alto-contraste .btn-icone-voltar:hover .icone-voltar {
+  filter: invert(0) !important;
+}
+
+/* Ajuste no mobile */
+@media (max-width: 768px) {
+  .btn-icone-voltar {
+    width: 31px !important;
+    height: 31px !important;
+    min-width: 31px !important;
+    max-width: 31px !important;
+    margin-left: 6px !important;
+  }
+  .icone-voltar {
+    width: 14px !important;
+    height: 14px !important;
+  }
+}

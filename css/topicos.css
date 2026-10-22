@@ -71,6 +71,16 @@
 
 /* alto contraste */
 
+body.alto-contraste .seccao-topicos {
+  background-color: #000000 !important;
+}
+
+/* Título principal "O que oferecemos?" em branco */
+body.alto-contraste .titulo-topicos {
+  color: #ffffff !important;
+}
+
+/* Estilo dos cartões dos tópicos no alto contraste */
 body.alto-contraste .topico {
   background-color: #ffffff !important;
   color: #000000 !important;
@@ -78,18 +88,19 @@ body.alto-contraste .topico {
   cursor: default !important;
 }
 
+/* Textos e títulos dentro dos cartões em preto para contrastar com o fundo branco */
 body.alto-contraste .topico h3,
 body.alto-contraste .topico p {
   color: #000000 !important;
 }
 
+/* Mantém os ícones originais sem filtros indesejados */
 body.alto-contraste .topico .topico-imagem {
   filter: none !important;
   background-color: transparent !important;
   mask-image: none !important;
   -webkit-mask-image: none !important;
 }
-
 
 
 @media screen and (max-width: 768px) {

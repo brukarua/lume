@@ -74,14 +74,15 @@
     display: block;
 }
 
-/* alto-contraste*/
-/* Fundo da barra de navegação preto no alto contraste */
+/* ==========================================
+   ALTO CONTRASTE - NAVBAR E BOTÕES
+   ========================================== */
+
 body.alto-contraste .navbar {
   background-color: #000000 !important;
   border-bottom: 1px solid #ffffff !important;
 }
 
-/* Estado normal dos itens do menu (Início e Contate-nos) */
 body.alto-contraste .nav-item,
 body.alto-contraste .nav-item1 {
   background-color: #ffffff !important;
@@ -90,13 +91,11 @@ body.alto-contraste .nav-item1 {
   text-decoration: none !important;
 }
 
-/* Força a cor preta em qualquer texto/seta dentro dos botões no estado normal */
 body.alto-contraste .nav-item *,
 body.alto-contraste .nav-item1 * {
   color: #000000 !important;
 }
 
-/* Efeito Hover dos itens no alto contraste (Inverte para fundo preto e texto branco) */
 body.alto-contraste .nav-item:hover,
 body.alto-contraste .nav-item1:hover {
   background-color: #000000 !important;
@@ -104,14 +103,74 @@ body.alto-contraste .nav-item1:hover {
   border-color: #ffffff !important;
 }
 
-/* Força a cor branca em textos e setas no hover */
 body.alto-contraste .nav-item:hover *,
 body.alto-contraste .nav-item1:hover * {
   color: #ffffff !important;
 }
 
 
-/* mobile */
+/* ==========================================
+   BOTÃO DE CONTRASTE (MESMA ALTURA DO BOTÃO AO LADO)
+   ========================================== */
+
+.btn-icone-contraste {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 37px !important;            /* Altura idêntica ao .nav-item1 */
+  height: 37px !important;
+  min-width: 37px !important;
+  max-width: 37px !important;
+  aspect-ratio: 1 / 1 !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  background-color: #CC9CFF !important;
+  border: none !important;
+  cursor: pointer !important;
+  margin-right: 10px !important;
+  box-sizing: border-box !important;
+  flex-shrink: 0 !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.btn-icone-contraste:hover {
+  background-color: #694D88 !important;
+  transform: translateY(-1px);
+}
+
+.icone-contraste {
+  width: 17px !important;
+  height: 17px !important;
+  object-fit: contain !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+/* Modo Alto Contraste para o botão circular */
+body.alto-contraste .btn-icone-contraste {
+  background-color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+  border-radius: 50% !important;
+}
+
+body.alto-contraste .icone-contraste {
+  filter: invert(1) !important;
+}
+
+body.alto-contraste .btn-icone-contraste:hover {
+  background-color: #000000 !important;
+  border-color: #ffffff !important;
+}
+
+body.alto-contraste .btn-icone-contraste:hover .icone-contraste {
+  filter: invert(0) !important;
+}
+
+
+/* ==========================================
+   RESPONSIVO (MOBILE)
+   ========================================== */
+
 @media (max-width: 768px) {
     .navbar {
         padding: 10px 16px;
@@ -143,5 +202,19 @@ body.alto-contraste .nav-item1:hover * {
     .nav-item1 {
         padding: 8px 14px;
         font-size: 13px;
+    }
+
+    /* Reduz a bolinha no mobile para acompanhar o botão "Contate-nos" */
+    .btn-icone-contraste {
+        width: 31px !important;
+        height: 31px !important;
+        min-width: 31px !important;
+        max-width: 31px !important;
+        margin-right: 6px !important;
+    }
+
+    .icone-contraste {
+        width: 14px !important;
+        height: 14px !important;
     }
 }
