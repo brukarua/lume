@@ -203,24 +203,8 @@ body.alto-contraste .btn:hover {
 
 
 /* ==========================================
-   RESPONSIVO (MOBILE)
+   BOTÃO DE VOLTAR (CIRCULAR)
    ========================================== */
-
-@media (max-width: 768px) {
-  .contact-grid,
-  .cartao-contato {
-    flex-direction: column;
-  }
-  
-  .form-row {
-    flex-direction: column;
-  }
-
-  .btn-right {
-    width: 100%;
-  }
-}
-
 
 .btn-icone-voltar {
   display: inline-flex !important;
@@ -236,7 +220,7 @@ body.alto-contraste .btn:hover {
   background-color: #CC9CFF !important;
   border: none !important;
   cursor: pointer !important;
-  margin-left: 10px !important;
+  margin-left: 0 !important;
   box-sizing: border-box !important;
   flex-shrink: 0 !important;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
@@ -276,16 +260,76 @@ body.alto-contraste .btn-icone-voltar:hover .icone-voltar {
   filter: invert(0) !important;
 }
 
-/* Ajuste no mobile */
+
+/* ==========================================
+   RESPONSIVO (MOBILE)
+   ========================================== */
+
 @media (max-width: 768px) {
-  .btn-icone-voltar {
+  .container {
+    padding: 40px 16px !important;
+  }
+
+  .titulo {
+    font-size: 40px !important;
+  }
+
+  .subtitulo {
+    font-size: 14px !important;
+    margin-bottom: 24px !important;
+  }
+
+  /* Força todo o cartão de contacto a empilhar e centralizar */
+  .cartao-contato {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    gap: 32px !important;
+  }
+
+  /* O formulário ocupa 100% da largura disponível */
+  .formulario {
+    width: 100% !important;
+    flex: none !important;
+  }
+
+  .form-row {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .formulario input {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Botão Enviar fica centralizado e com largura ajustada */
+  .btn,
+  .btn-right {
+    width: 100% !important;
+    align-self: center !important;
+    margin: 8px 0 0 0 !important;
+  }
+
+  /* Bloco de informações de contacto centralizado abaixo do formulário */
+  .infoContato {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 20px 10px !important;
+  }
+
+  /* Ajuste dos botões da navbar no mobile */
+  .btn-icone-voltar,
+  .btn-icone-contraste {
     width: 31px !important;
     height: 31px !important;
     min-width: 31px !important;
     max-width: 31px !important;
-    margin-left: 6px !important;
   }
-  .icone-voltar {
+
+  .icone-voltar,
+  .icone-contraste {
     width: 14px !important;
     height: 14px !important;
   }
